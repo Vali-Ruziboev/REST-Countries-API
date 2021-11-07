@@ -32,7 +32,7 @@
 }
 
 body{
-  min-width: 375px;
+  min-width: 352px;
   height: max-content;
   font-family: var(--font-family);
   color: var(--Very-Dark-Blue-Light-Mode-Text);
