@@ -16,7 +16,7 @@ const Home = () => {
 const handleSearch = (e)=>{
     if(data){
         const filteredCountry = data.filter(country=>{
-        if(country.name.toLowerCase().match(e.target.value)){
+        if(country.name.toLowerCase().match(e.target.value.toLowerCase())){
             return country
         } 
         return null
