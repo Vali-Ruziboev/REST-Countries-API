@@ -119,7 +119,7 @@ h5{
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   height: max-content;
 }
@@ -135,6 +135,7 @@ h5{
   box-shadow: 0 0 10px 0px  var(--shadow);
   border-radius: 5px;
   background-color: var(--Light-Mode-Elements);
+  margin-bottom: 2rem;
 }
 
 .searchbar ion-icon {
@@ -156,6 +157,7 @@ h5{
   background-position-y: center;
   color: var(--Very-Dark-Blue-Light-Mode-Text);
   background-color: var(--Light-Mode-Elements);
+  margin-bottom: 2rem;
 }
 select{
   border: none;

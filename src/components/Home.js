@@ -14,13 +14,15 @@ const Home = () => {
         setCountries(filteredCountry)
     }
 const handleSearch = (e)=>{
-    const filteredCountry = data.filter(country=>{
+    if(data){
+        const filteredCountry = data.filter(country=>{
         if(country.name.toLowerCase().match(e.target.value)){
             return country
         } 
         return null
-    })
-    setSearchedCountry(filteredCountry)
+        })
+        setSearchedCountry(filteredCountry)
+    }
 }
 
 
@@ -35,7 +37,7 @@ window.onscroll = ()=>{
             <div className="tools">
                 <div className="searchbar">
                     <ion-icon name="search-outline"></ion-icon>
-                    <input onChange={handleSearch} type="text" className="search" placeholder='Search for a country...' />
+                    <input onChange={handleSearch} onInput={handleSearch} type="text" className="search" placeholder='Search for a country...' />
                 </div>
                 <select onChange={handleSelect} className="filter" defaultValue ="Filter by Region">
                     <option value=""  hidden>Filter by Region</option>
