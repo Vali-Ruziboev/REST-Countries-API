@@ -162,7 +162,6 @@ h5{
 select{
   border: none;
   background: white;
-  border: 0;
 }
 select:focus{
   outline: none;
@@ -170,7 +169,6 @@ select:focus{
 select option{
   padding: 0;
   padding-top: 5rem;
-  border: 0;
   color: var(--Very-Dark-Blue-Light-Mode-Text);
   background-color: var(--Light-Mode-Elements);
 }

@@ -37,7 +37,7 @@ window.onscroll = ()=>{
             <div className="tools">
                 <div className="searchbar">
                     <ion-icon name="search-outline"></ion-icon>
-                    <input onChange={handleSearch} onInput={handleSearch} type="text" className="search" placeholder='Search for a country...' />
+                    <input onChange={handleSearch} onKeyDown={handleSearch} type="text" className="search" placeholder='Search for a country...' />
                 </div>
                 <select onChange={handleSelect} className="filter" defaultValue ="Filter by Region">
                     <option value=""  hidden>Filter by Region</option>
