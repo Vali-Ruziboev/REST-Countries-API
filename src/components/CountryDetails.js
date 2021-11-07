@@ -38,11 +38,12 @@ Back</button>
                     <div className="border-countries">
                     {data[0].borders && <>
                         <h4>Border Countries:</h4>
-                        {data[0].borders && data[0].borders.map(b=>{
-                            const countryName = allData && allData.map(c=>{
+                        {data[0].borders && data[0].borders.map((b)=>{
+                            const countryName = allData && allData.map((c)=>{
                                 if(c.alpha3Code.match(b)){
                                     return <Link to={`/${c.name}`}className="border" key={c.name}>{c.name}</Link>
                                 }
+                                return
                             })
                             return countryName
                         })}

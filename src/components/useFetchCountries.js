@@ -18,7 +18,7 @@ const useFetchCountries = (url) => {
             setError(null)
         })
         .catch(err=>{
-            if(err.name == 'AbortError'){
+            if(err.name === 'AbortError'){
                 console.log('The process was aborted');
             }
             else{

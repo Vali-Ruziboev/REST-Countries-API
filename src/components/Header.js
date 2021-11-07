@@ -26,7 +26,7 @@ const Header = () => {
     }
     useEffect(()=>{
         let darkMode = localStorage.getItem('restCountryDarkmode')
-        if(darkMode=='true'){
+        if(darkMode==='true'){
             setDarkMode(true)
             dMode()
         }
