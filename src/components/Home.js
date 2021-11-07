@@ -18,7 +18,7 @@ const handleSearch = (e)=>{
         if(country.name.toLowerCase().match(e.target.value)){
             return country
         }
-        return
+        return null
     })
     setSearchedCountry(filteredCountry)
 }

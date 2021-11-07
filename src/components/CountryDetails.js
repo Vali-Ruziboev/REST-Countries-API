@@ -43,7 +43,7 @@ Back</button>
                                 if(c.alpha3Code.match(b)){
                                     return <Link to={`/${c.name}`}className="border" key={c.name}>{c.name}</Link>
                                 }
-                                return
+                                return null
                             })
                             return countryName
                         })}
