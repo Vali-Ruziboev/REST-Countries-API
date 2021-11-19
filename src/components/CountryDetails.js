@@ -24,7 +24,7 @@ Back</button>
                     <div className="contry-infomration-wrapper">
                         <div className="country-info1"> 
                             <h5><strong>Native Name:</strong> <span>{data[0].nativeName && data[0].nativeName}</span></h5>
-                            <h5><strong>Poppulation:</strong> <span>{data[0].population && data[0].population}</span></h5>
+                            <h5><strong>Population:</strong> <span>{data[0].population && data[0].population}</span></h5>
                             <h5><strong>Region:</strong> <span>{data[0].region && data[0].region}</span></h5>
                             <h5><strong>Sub Region:</strong> <span>{data[0].subregion && data[0].subregion}</span></h5>
                             <h5><strong>Capital:</strong> <span>{data[0].capital && data[0].capital}</span></h5>
