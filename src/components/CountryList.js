@@ -10,7 +10,7 @@ const CountryList = ({countries}) => {
                     <div className="country-detailed">  
                         <h3>{country.name}</h3>
                         <div className="country-info">
-                            <h5><strong>Poppulation:</strong> <span>{country.population}</span></h5>
+                            <h5><strong>Population:</strong> <span>{country.population}</span></h5>
                             <h5><strong>Region:</strong> <span>{country.region}</span></h5>
                             <h5><strong>Capital:</strong> <span>{country.capital}</span></h5>
                         </div>
